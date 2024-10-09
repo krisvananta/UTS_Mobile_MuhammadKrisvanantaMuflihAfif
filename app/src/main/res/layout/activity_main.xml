@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To My App"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="218dp"
+        android:layout_height="188dp"
+        android:layout_below="@+id/welcome"
+        android:src="@drawable/baseline_notifications_none_24"
+
+        />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:hint="Enter your name"
+        />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_field"
+        android:text="Submit"
+        android:layout_marginEnd="2dp"
+        />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/submit_button"
+        android:layout_below="@+id/name_field"
+        android:text="Cancel"
+        />
+
+</RelativeLayout>
